@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Memory game</title>
+        <style>
+            embed{
+                height: 1500px;
+                width: 1300px;
+            }
+            h1{
+                font-size: 80px;
+            }
+        </style>
+    </head>
+    <body onload="rand()">
+        <center>
+            <h1>Memory Game</h1>
+            <embed id="game" src="memorygame.html">
+            <embed id="game2" src="memorygame2.html">
+                <embed id="game3" src="memorygame3.html">
+                    <embed id="game4" src="memorygame4.html">
+                        <embed id="game5" src="memorygame5.html">
+                            <embed id="game6" src="memorygame6.html">
+        </center>
+        <script>
+            function rand(){
+                var fir = document.getElementById("game");
+                var sec = document.getElementById("game2");
+                var thir = document.getElementById("game3");
+                var four = document.getElementById("game4");
+                var fif = document.getElementById("game5");
+                var six = document.getElementById("game6");
+                var num = Math.floor(Math.random() * 6);
+                
+                if (num == 0){
+                    sec.parentNode.removeChild(sec);
+                    thir.parentNode.removeChild(thir);
+                    four.parentNode.removeChild(four);
+                    fif.parentNode.removeChild(fif);
+                    six.parentNode.removeChild(six);
+                }else if (num == 1){
+                    fir.parentNode.removeChild(fir);
+                    thir.parentNode.removeChild(thir);
+                    four.parentNode.removeChild(four);
+                    fif.parentNode.removeChild(fif);
+                    six.parentNode.removeChild(six);
+                }else if (num  == 2){
+                    sec.parentNode.removeChild(sec);
+                    fir.parentNode.removeChild(fir);
+                    four.parentNode.removeChild(four);
+                    fif.parentNode.removeChild(fif);
+                    six.parentNode.removeChild(six);
+                }else if (num  == 3){
+                    sec.parentNode.removeChild(sec);
+                    thir.parentNode.removeChild(thir);
+                    fir.parentNode.removeChild(fir);
+                    fif.parentNode.removeChild(fif);
+                    six.parentNode.removeChild(six);
+                }else if (num  == 4){
+                    sec.parentNode.removeChild(sec);
+                    thir.parentNode.removeChild(thir);
+                    four.parentNode.removeChild(four);
+                    fir.parentNode.removeChild(fir);
+                    six.parentNode.removeChild(six);
+                }else if (num == 5){
+                    sec.parentNode.removeChild(sec);
+                    thir.parentNode.removeChild(thir);
+                    four.parentNode.removeChild(four);
+                    fif.parentNode.removeChild(fif);
+                    fir.parentNode.removeChild(fir);
+                }
+            }
+        </script>
+    </body>
+</html>

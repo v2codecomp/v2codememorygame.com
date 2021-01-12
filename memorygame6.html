@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>document</title>
+        <style>
+            img{
+                height: 300px;
+                width: 300px;
+            }
+            p{
+                font-size: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        <img id="yo1" onclick="generate('yo1')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU">
+        <img id="yo2" onclick="generate('yo2')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU">
+        <img id="yo3" onclick="generate('yo3')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU"><br>
+        <img id="yo4" onclick="generate('yo4')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU">
+        <img id="yo5" onclick="generate('yo5')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU">
+        <img id="yo6" onclick="generate('yo6')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU"><br>
+        <img id="yo7" onclick="generate('yo7')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU">
+        <img id="yo8" onclick="generate('yo8')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU">
+        <img id="yo9" onclick="generate('yo9')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU"><br>
+        <img id="yo10" onclick="generate('yo10')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU">
+        <img id="yo11" onclick="generate('yo11')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU">
+        <img id="yo12" onclick="generate('yo12')" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU"><br>
+        <center><p id="demo"></p></center>
+        <script>
+            var score = 0;
+            var scorechance = 0;
+            var img, imgyo, imgblah, imgblahblah, img1, img2;
+            function generate(image){
+                if (image == 'yo1'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2TWguFMyRnLCnrWV0bigQ830XTfDxId9Sug&usqp=CAU";
+                }else if (image == 'yo2'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2TWguFMyRnLCnrWV0bigQ830XTfDxId9Sug&usqp=CAU";
+                }else if (image == 'yo3'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjJZlXlk74_i_MfnntqSNJpKTDdjDkTb4Ig&usqp=CAU";
+                }else if (image == 'yo6'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzjJZlXlk74_i_MfnntqSNJpKTDdjDkTb4Ig&usqp=CAU";
+                }else if (image == 'yo7'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShb66DTqpyP4PvCVn8YgEVIgyxE8lDATCOkA&usqp=CAU";
+                }else if (image == 'yo5'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShb66DTqpyP4PvCVn8YgEVIgyxE8lDATCOkA&usqp=CAU";
+                }else if (image == 'yo9'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdklVrRMVWoyhnyRrfRpdjDQ5EmMXzg4MhZQ&usqp=CAU";
+                }else if (image == 'yo11'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdklVrRMVWoyhnyRrfRpdjDQ5EmMXzg4MhZQ&usqp=CAU";
+                }else if (image == 'yo12'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKVRSfEHD-Jvj5th7Ss8gyc8i13kyVG0RoTg&usqp=CAU";
+                }else if (image == 'yo10'){
+                    document.getElementById(image).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKVRSfEHD-Jvj5th7Ss8gyc8i13kyVG0RoTg&usqp=CAU";
+                }else if (image == 'yo4'){
+                    document.getElementById(image).src = "https://infowebtechzone.com/wp-content/uploads/2019/08/Computer-programming00.jpg";
+                }else if (image == 'yo8'){
+                    document.getElementById(image).src = "https://infowebtechzone.com/wp-content/uploads/2019/08/Computer-programming00.jpg";
+                }
+                scorechance = scorechance + 1;
+                if (scorechance % 2 != 0){
+                    img = document.getElementById(image).src;
+                    imgblah = image;
+                    img1 = document.getElementById(image);
+                }
+                if (scorechance % 2 == 0){
+                    imgyo = document.getElementById(image).src;
+                    imgblahblah = image;
+                    img2 = document.getElementById(image);
+                    if (img == imgyo){
+                        setTimeout(function(){
+                            score = score + 1;
+                            document.getElementById("demo").innerHTML = "Score = " + score;
+                            img1.parentNode.removeChild(img1);
+                            img2.parentNode.removeChild(img2);
+                    }, 1000);
+                    }else if (img != imgyo){
+                        setTimeout(function(){
+                            document.getElementById(imgblah).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU";
+                        document.getElementById(imgblahblah).src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-vkRe3C8tpeqAcxo4p7MVH2HKVYLwv892g&usqp=CAU";
+                        alert("it is not the same");
+                    }, 1000);
+                        }
+                }
+            }
+        </script>
+    </body>
+</html>
